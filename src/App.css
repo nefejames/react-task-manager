@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li:first-child {
+  margin-right: 2rem;
+}
+
+nav .fa {
+  font-size: 1.7rem;
+}
+
+/*form styles*/
+form {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: inherit;
+  border-radius: 5px;
+  background: rgb(235, 231, 231);
+  border: 1px solid rgb(189, 187, 187);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/*task container styles*/
+.container {
+  color: #444;
+  margin: 1rem 0;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.undone-tasks {
+  background: rgb(190, 218, 250);
+}
+
+.completed-tasks {
+  background: rgb(208, 246, 191);
+}
+
+/*list styles*/
+li {
+  padding: 0.7rem 0;
+}
+
+.fa {
+  color: #444;
+  padding: 0.5rem;
+}
+
+.fa:hover {
+  cursor: pointer;
+}
+
+.fa-check:hover,
+.fa-check:focus,
+.fa-check:active {
+  color: green;
+}
+
+.fa-close:hover {
+  color: red;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    width: 80%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container {
+    flex: 1;
+    margin: 1rem 0;
+  }
+
+  .container:first-child {
+    margin-right: 2rem;
+  }
+}
